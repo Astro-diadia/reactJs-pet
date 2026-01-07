@@ -2,21 +2,16 @@
 
 ## Запуск
 
-1. Правильная директория:
+1. Установить зависимости:
 
     ```bash
-    cd DataDrivenMarkup
-    cd homework-starter
-    ```
-
-2. Установить зависимости:
-
-    ```bash
+    cd DataDrivenMarkup/homework-starter
     npm install
     ```
 
-3. Запустить приложение:
+2. Запустить приложение:
 
     ```bash
+    cd DataDrivenMarkup/homework-starter
     npm run dev
     ```

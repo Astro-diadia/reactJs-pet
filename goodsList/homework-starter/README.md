@@ -8,13 +8,13 @@
 1. Установить зависимости:
 
     ```bash
-    cd LogicInComponents/homework-starter
+    cd goodsList/homework-starter
     npm install
     ```
 
 2. Запустить приложение:
 
     ```bash
-    cd LogicInComponents/homework-starter
+    cd goodsList/homework-starter
     npm run dev
     ```
