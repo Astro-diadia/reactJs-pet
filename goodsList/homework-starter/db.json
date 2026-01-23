@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "test@mail.com",
+            "password": "1234",
+            "role": "user"
+        }
+    ],
+    "todos": [
+        {
+            "id": 1,
+            "text": "First task",
+            "userId": 1
+        }
+    ]
+}

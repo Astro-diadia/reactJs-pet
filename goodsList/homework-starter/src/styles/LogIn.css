@@ -1,4 +1,4 @@
-.login {
+.login__form {
   padding: 16px;
   width: 100%;
   max-width: 600px;
@@ -22,6 +22,12 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login__wrapper {
+  display: flex;
+  gap: 12px;
 }
 
 .login__button {

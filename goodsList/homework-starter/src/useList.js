@@ -6,7 +6,6 @@ export function useList() {
     return saved.filter(item => item.title.trim() !== "");
   })
 
-  /** Создать новый элемент. */
   const createItem = () => {
     const newItem = { id: Date.now(), title: '', done: false, focus: true }
 
@@ -25,12 +24,6 @@ export function useList() {
     )
   }
 
-  /**
-   * Установить заголовок элемента.
-   *
-   * @param id - ID элемента.
-   * @param title - Заголовок элемента.
-   */
   const setItemTitle = (id, title) => {
     setList(prev => {
       const updated = prev.map(item => {
@@ -42,11 +35,6 @@ export function useList() {
     })
   };
 
-  /**
-   * Переключить выполненность элемента.
-   *
-   * @param id - ID элемента.
-   */
   const toggleItem = (id) => {
     setList(prev => {
       const updated = prev.map(item => {
@@ -58,11 +46,6 @@ export function useList() {
     })
   }
 
-  /**
-   * Удалить элемент.
-   *
-   * @param id - ID элемента.
-   */
   const deleteItem = (id) => {
     setList(prev => {
       const updated = prev.filter(item => item.id !== id)

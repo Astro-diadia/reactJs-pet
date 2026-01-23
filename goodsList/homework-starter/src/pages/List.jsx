@@ -1,15 +1,15 @@
-import { CardList } from './CardList'
-import { useList } from './useList'
-import './App.css'
+import { CardList } from '../components/CardList'
+import { useList } from '../useList'
+import '../styles/List.css'
 
-export const App = () => {
+export const List = () => {
   const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem } = useList();
 
   return (
-    <div className="app">
+    <div className="list">
       <h1>Список покупок</h1>
 
-      <button className="create-button" onClick={createItem}>
+      <button className="list__btn" onClick={createItem}>
         Новый элемент
       </button>
 

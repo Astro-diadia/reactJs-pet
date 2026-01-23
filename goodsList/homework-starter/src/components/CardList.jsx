@@ -1,5 +1,5 @@
 import { Card } from './Card';
-import './CardList.css';
+import '../styles/CardList.css';
 
 export const CardList = ({
   list,
