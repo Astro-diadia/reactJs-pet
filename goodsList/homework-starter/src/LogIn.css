@@ -1,0 +1,15 @@
+.login-container {
+  padding: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 70px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+}

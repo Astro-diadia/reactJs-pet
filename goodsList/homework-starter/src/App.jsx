@@ -1,6 +1,6 @@
-import { CardList } from './CardList';
-import { useList } from './useList';
-import './App.css';
+import { CardList } from './CardList'
+import { useList } from './useList'
+import './App.css'
 
 export const App = () => {
   const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem } = useList();
@@ -21,5 +21,5 @@ export const App = () => {
         onItemDelete={deleteItem}
       />
     </div>
-  );
-};
+  )
+}
