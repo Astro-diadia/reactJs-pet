@@ -9,6 +9,7 @@ const SortableCardItem = ({
   onItemToggle,
   onItemDelete,
   toFocus,
+  onReorder,
 }) => {
   const { id, title, done } = item
 

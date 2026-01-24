@@ -3,7 +3,7 @@ import { useList } from '../useList'
 import '../styles/List.css'
 
 export const List = () => {
-  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem } = useList()
+  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem, reorderList } = useList()
 
   return (
     <div className="list">
@@ -19,6 +19,7 @@ export const List = () => {
         onItemTitleChange={setItemTitle}
         onItemToggle={toggleItem}
         onItemDelete={deleteItem}
+        onReorder={reorderList}
       />
     </div>
   )
