@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import '../styles/Card.css';
+import { useEffect, useRef } from 'react'
+import '../styles/Card.css'
 
 export const Card = ({
   id,
@@ -11,6 +11,7 @@ export const Card = ({
   toFocus,
   item,
 }) => {
+
   const handleTitleChange = (event) => {
     onTitleChange(id, event.target.value);
   };

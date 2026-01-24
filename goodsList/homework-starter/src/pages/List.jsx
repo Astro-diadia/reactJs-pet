@@ -3,7 +3,7 @@ import { useList } from '../useList'
 import '../styles/List.css'
 
 export const List = () => {
-  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem } = useList();
+  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem } = useList()
 
   return (
     <div className="list">

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState } from "react"
+import { arrayMove } from "@dnd-kit/sortable"
 
 export function useList() {
   const [list, setList] = useState(() => {
@@ -52,7 +53,15 @@ export function useList() {
       localStorage.setItem("shopping-list", JSON.stringify(updated))
       return updated
     })
-  };
+  }
+
+  const reorderList = (oldIndex, newIndex) => {
+    setList((items) => {
+      const newItems = arrayMove(items, oldIndex, newIndex)
+      localStorage.setItem("shopping-list", JSON.stringify(newItems))
+      return newItems
+    })
+  }
 
   return {
     list,
@@ -61,5 +70,6 @@ export function useList() {
     setItemTitle,
     toggleItem,
     deleteItem,
+    reorderList,
   };
 }
