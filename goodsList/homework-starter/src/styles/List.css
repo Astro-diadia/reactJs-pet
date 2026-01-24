@@ -8,7 +8,15 @@
   gap: 16px;
 }
 
+.list__wrapper-btns {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin: 0 0 20px;
+}
+
 .list__btn {
+  width: 100%;
   cursor: pointer;
   border: none;
   background-color: #3d3bff;
@@ -16,5 +24,8 @@
   border-radius: 16px;
   font-size: 16px;
   padding: 8px;
-  margin: 0 0 40px;
+}
+
+.list__btn--danger {
+  background-color: #ff3b3b;
 }

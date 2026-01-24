@@ -3,15 +3,20 @@ import { useList } from '../useList'
 import '../styles/List.css'
 
 export const List = () => {
-  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem, reorderList } = useList()
+  const { list, toFocus, createItem, setItemTitle, toggleItem, deleteItem, reorderList, deleteDoneItems } = useList()
 
   return (
     <div className="list">
       <h1>Список покупок</h1>
 
-      <button className="list__btn" onClick={createItem}>
-        Новый элемент
-      </button>
+      <div className="list__wrapper-btns">
+        <button className="list__btn" onClick={createItem}>
+          Новый элемент
+        </button>
+        <button className="list__btn list__btn--danger" onClick={deleteDoneItems}>
+          Удалить выполненные
+        </button>
+      </div>
 
       <CardList
         list={list}

@@ -4,7 +4,7 @@ import { arrayMove } from "@dnd-kit/sortable"
 export function useList() {
   const [list, setList] = useState(() => {
     const saved = JSON.parse(localStorage.getItem("shopping-list")) || []
-    return saved.filter(item => item.title.trim() !== "");
+    return saved.filter(item => item.title.trim() !== "")
   })
 
   const createItem = () => {
@@ -63,6 +63,14 @@ export function useList() {
     })
   }
 
+  const deleteDoneItems = () => {
+    setList(prev => {
+      const updated = prev.filter(item => !item.done)
+      localStorage.setItem("shopping-list", JSON.stringify(updated))
+      return updated
+    })
+  }
+
   return {
     list,
     toFocus,
@@ -71,5 +79,6 @@ export function useList() {
     toggleItem,
     deleteItem,
     reorderList,
-  };
+    deleteDoneItems,
+  }
 }
