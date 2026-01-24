@@ -19,4 +19,22 @@
 
 .card-list__item {
   animation: appearance 0.3s ease forwards;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #eee;
+  gap: 8px;
+}
+
+.card-list__drag-handle {
+  background: none;
+  border: none;
+  cursor: grab;
+  font-size: 1.5rem;
+  padding: 0 8px;
+}
+
+.card-list__drag-handle:active {
+  cursor: grabbing;
 }

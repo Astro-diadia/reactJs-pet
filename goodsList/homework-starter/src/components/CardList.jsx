@@ -31,7 +31,6 @@ const SortableCardItem = ({
       ref={setNodeRef}
       style={style}
       {...attributes}
-      {...listeners}
     >
       <Card
         id={id}
@@ -43,6 +42,10 @@ const SortableCardItem = ({
         toFocus={toFocus}
         item={item}
       />
+      <button className="card-list__drag-handle" aria-label="Drag handle"
+        {...listeners}>
+        &#x2630;
+      </button>
     </li>
   )
 }

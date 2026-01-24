@@ -1,7 +1,5 @@
 .card {
-  padding: 16px;
-  border-radius: 16px;
-  background-color: #eee;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,6 +18,6 @@
   opacity: 0.5;
 }
 
-.card:has(.card__done:checked) > .card__title:not(:focus) {
+.card:has(.card__done:checked)>.card__title:not(:focus) {
   text-decoration: line-through;
 }
